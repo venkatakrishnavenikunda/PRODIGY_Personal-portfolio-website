@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.web{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    border-radius: 8px;
+    color:black;
+    text-decoration: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 4px;
+    padding-left: 4px;
+    transition: transform 0.3s ease;
+}
+.menu:hover{
+    transform: scale(1.2);
+}
+.profileimg{
+    display: block;
+    width: 80px;
+    border-radius: 50%;
+}
+.leftmenu a{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+.left{
+    display: flex;
+    padding-right: 30px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    /*background-color: #8E8DBE;*/
+    background: linear-gradient(to right, #8E8DBE, #FF1053, #9893DA);
+    padding-top: 40px;
+}
+.left.animate{
+    animation: slideRight 1s ease-out;
+}
+@keyframes slideRight {
+            0% {
+                transform: translateX(-100%); /* Start position */
+            }
+            100% {
+                transform: translateX(0); /* End position, adjust the percentage based on your needs */
+            }
+}
+.left.animate span:nth-child(1){
+    animation-delay: 6s; 
+}
+#home{
+    flex: 1;
+}
+#home h1{ 
+    color:#FF1053;
+    text-shadow: -1px -1px 0 white;
+}
+.title{
+    text-align: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+.title h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.title p{
+    font-size: 24px;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typingtext {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0; 
+    animation: typing 3s steps(40) 0s forwards; 
+    font-size: 50px;
+    text-shadow: white -1px -1px;
+}
+
+.typingtext::after {
+    display: inline-block;
+    margin-left: 2px;
+}
+.subtitle{
+    opacity: 0;
+}
+.subtitle.animate{
+    animation: fadeInWords 3s forwards;
+}
+@keyframes fadeInWords {
+    from {
+        opacity: 0.1;
+        transform: translateY(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+.subtitle.animate span:nth-child(1){
+    animation-delay: 6s; 
+}
+.title1{
+    display: inline-block;
+}
+.title1.animate{
+    animation: slideInFromTop 1s ease-out;
+}
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%); /* Move the element up by its own height */
+    }
+    to {
+        transform: translateY(0); /* Move the element back to its original position */
+    }
+}
+
+.title1.animate span:nth-child(1){
+    animation-delay: 10s; 
+}
+#about{
+    display: none;
+    text-align: center;
+    padding-right: 15px;
+    flex: 1;
+}
+#about .typingtext1{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#about p{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#education{
+    display: none;
+    flex: 1;
+}
+#education i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+#education .typingtext1{
+    padding-top: 4px;
+}
+#education h1{
+    font-size: 23px;
+    padding-top: 5px;
+    margin-top: 0;
+}
+#education h2{
+    font-size: 17px;
+}
+#education li{
+    list-style: none;
+    padding-top: 5px;
+    font-size: 13px;
+}
+#skills{
+    display: none;
+    flex: 1;
+    font-weight: 900;
+}
+.bodyElement4{
+    opacity: 0.2;
+}
+#skills li{
+    list-style: none;
+    padding-top: 5px;
+}
+#skills i{
+    font-size: 20px;
+    padding-right: 10px;
+}
+#project{
+    display: none;
+    flex: 1;
+}
+.bodyElement5{
+    width: 100%;
+}
+#project li{
+    font-size: 30px;
+}
+#project p{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#project .typingtext1{
+    list-style: none;
+}
+#experience{
+    display: none;
+    flex: 1;
+}
+#experien h1{
+    font-size: 20px;
+}
+
+#experience li{
+    list-style: none;
+    font-size: 15px;
+}
+#experience p{
+    font-size: 5px;
+}
+#experience .zoom{
+    font-size: 15px;
+}
+#contact{
+    display: none;
+    flex: 1;
+}
+#contact ul{
+    list-style: none;
+}
+#contact i{
+    font-size: 18px;
+}
+#icon{
+    padding-right: 5px;
+    font-size: 20px;
+}
+#contact a{
+    color: black;
+    text-decoration: none;
+}
+.zoom{
+    transition: transform 0.3s ease;
+    padding-top: 5px;
+}
+.zoom:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
